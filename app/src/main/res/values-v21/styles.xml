@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="BaseAppTheme">
+        <!--取消ActionBar-->
+        <item name="android:windowActionBar">false</item>
+        <!--底部导航栏颜色-->
+        <item name="android:navigationBarColor">@color/accent_material_light</item>
+        <item name="android:windowBackground">@color/white</item>
+        <!-- ListView的分割线颜色，switch滑动区域色-->
+        <item name="android:colorForeground">@color/red</item>
+        <!-- popMenu的背景色 整个主题背景 -->
+        <item name="android:colorBackground">@color/white</item>
+        <!-- 控件默认颜色 ，效果会被colorControlActivated取代  -->
+        <item name="android:colorAccent">@color/red</item>
+
+        <!-- 控件默认时颜色  -->
+        <item name="android:colorControlNormal">@color/Violet</item>
+        <!-- 控件选中时颜色 -->
+        <item name="android:colorControlActivated">@color/red</item>
+        <!-- 控件按压时颜色，会影响水波纹效果，继承自colorAccent  -->
+        <item name="android:colorControlHighlight">@color/HotPink</item>
+        <!-- Button的默认背景 -->
+        <item name="android:colorButtonNormal">@color/font_theme_selected</item>
+        <!-- Button，textView的文字颜色 包括ToolBar  -->
+        <item name="android:textColor">@color/gradient_theme_start</item>
+        <!-- RadioButton checkbox等控件的文字 Hint -->
+        <item name="android:textColorPrimaryDisableOnly">@color/Gray</item>
+        <!-- actionBar的标题文字颜色 包括EditText-->
+        <item name="android:textColorPrimary">@color/SpringGreen</item>
+        <!-- 定制 在values/styles.xml里不需要添加android前缀。-->
+    </style>
+
+</resources>

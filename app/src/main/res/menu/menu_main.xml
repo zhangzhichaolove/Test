@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_nav_haha"
+            android:icon="@mipmap/ic_launcher"
+            android:orderInCategory="2"
+            android:title="QQ/微信语音"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/home_nav_heihei"
+            android:icon="@mipmap/ic_launcher"
+            android:orderInCategory="1"
+            android:title="自定义相机"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/webView"
+            android:icon="@mipmap/ic_launcher"
+            android:orderInCategory="1"
+            android:title="WebView"
+            app:showAsAction="never" />
+    </group>
+</menu>

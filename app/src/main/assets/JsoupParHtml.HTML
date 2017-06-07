@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="./js/jquery-1.7.1.min.js" charset="utf-8"></script>
+    <title>测试页面</title>
+    <style type="text/css">
+  *{
+  border:none;
+  margin:0;
+  padding:0;
+  font-size:12px;
+  font-family:"微软雅黑";
+  }
+
+  .loadDesc{
+  width:100%;
+  height:50px;
+  margin-top:30px;
+  }
+
+  .loadDesc p{
+  font-size:18px;
+  color:#ff0000;
+  line-height:50px;
+  text-align:center;
+  font-weight:bold;
+  }
+
+  .loadDesc p span{
+  font-size:18px;
+  }
+
+  .imageView{
+  width:80%;
+  height:auto;
+  margin:0px auto;
+  }
+
+  .imageView img{
+  width:100%;
+  }
+
+  .hint{
+  width:80%;
+  height:40px;
+  line-height:40px;
+  font-size:13px;
+  color:#000;
+  background:#ccc;
+  opcity:0.8;
+  border-radius:5px;
+  text-align:center;
+  margin:10px auto 0px;
+  }
+
+  .btn{
+    width:100%;
+    height:40px;
+    margin:0 auto;
+    border: 1px solid #FF0000;
+}
+
+
+    </style>
+
+    <script>
+function onClick(){
+alert("请注意接下来网页内容变化");
+javascript:window.local_obj.showSource(document.getElementsByTagName('html')[0].innerHTML);
+}
+function javacalljs(){
+alert("外部JAVA调用了此js");
+}
+function javacalljs2(){
+window.android.startFunction();
+}
+
+    </script>
+
+</head>
+<body>
+<div class="loadDesc">
+    <p>正在加载<span>...</span></p>
+</div>
+<div id="imageView" class="imageView">
+    [站外图片上传中……]
+</div>
+<button align="center" class="btn" onclick="onClick()" type="button">点击我调用外部方法！</button>
+<img id="img" src="voice.png" alt="这是一个图片"/>
+<br/>
+<a align="center" href="http://www.baidu.com">跳转百度</a>
+<p class="hint" onclick="javacalljs2()" >您好，我是进度条</p>
+</body>
+</html>

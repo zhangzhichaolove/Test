@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RxJava</string>
+    <string name="username_error">账号不能为空</string>
+    <string name="password_error">密码不能为空</string>
+    <string name="azsh">按住说话</string>
+    <string name="skjs">松开结束</string>
+    <string name="skqx">松开取消</string>
+    <string name="skfs">松开发送</string>
+    <string name="lygd">录音过短</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+
+    <string name="cheese_ipsum">这里是名片内容，这里为了测试，直接复制粘贴.这里是名片内容，这里为了测试，直接复制粘贴.这里是名片内容，这里为了测试，直接复制粘贴.这里是名片内容，这里为了测试，直接复制粘贴.这里是名片内容，这里为了测试，直接复制粘贴.</string>
+
+</resources>

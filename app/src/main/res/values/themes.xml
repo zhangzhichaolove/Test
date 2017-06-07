@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--********************************************系统主题Start*****************************************************-->
+    <style name="AppTheme" parent="BaseAppTheme">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--边缘波纹也会使用此色调-->
+        <item name="colorPrimary">@color/HotPink</item>
+        <!--AppBar默认使用的主题色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="android:actionBarSize">@dimen/actionbar_height</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <!--<item name="android:windowBackground">@null</item>-->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+        <item name="actionOverflowMenuStyle">@style/MenuStyle</item>
+    </style>
+    <!--********************************************系统主题End*****************************************************-->
+
+    <!--********************************************菜单主题Start*****************************************************-->
+    <style name="MenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">
+        <!--设置不覆盖锚点-->
+        <item name="overlapAnchor">false</item>
+        <!--弹出菜单背景色为标题栏的背景色-->
+        <item name="android:popupBackground">?attr/colorPrimary</item>
+        <!--弹出菜单与标题栏的垂直间距-->
+        <item name="android:dropDownVerticalOffset">0dip</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">18sp</item>
+        <!-- 添加这一句， 即可改变菜单图标的颜色-->
+        <item name="android:textColorSecondary">#00FF00</item>
+        <!--<item name="android:colorBackground">#000000</item>-->
+    </style>
+    <!--********************************************菜单主题END*****************************************************-->
+
+    <style name="ActivityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_slide_right_out</item>
+    </style>
+
+    <style name="DialogTheme" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+    <!--********************************************控件主题Start*****************************************************-->
+    <style name="MyButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:theme">@style/ButtonTheme</item>
+    </style>
+
+    <style name="ButtonTheme" parent="Theme.AppCompat.Light">
+        <!--波纹颜色-->
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <!--按钮正常背景颜色-->
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:background">@null</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/card_margin</item>
+    </style>
+    <!--********************************************控件主题End*****************************************************-->
+</resources>
